@@ -1,5 +1,5 @@
 # TMDBMovie
-# Blazor WebAssembly Project
+### Blazor WebAssembly Project
 
 This project is a Blazor WebAssembly application designed to demonstrate CRUD operations using a simple task management system.
 
