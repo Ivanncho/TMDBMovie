@@ -1,0 +1,46 @@
+/* /Components/Pages/Movie.razor.rz.scp.css */
+.hero-bg[b-jxlkarmdvb] {
+  /* background-image: var(--bg-img); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+}
+.hero-container[b-jxlkarmdvb] {
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  backdrop-filter: blur(2px) brightness(.5);
+  margin-bottom: 2rem;
+}
+/* /Shared/Footer.razor.rz.scp.css */
+.footerStyle[b-lnt7rqpf2h]{
+    background-color: hsl(192, 77%, 9%);
+    color: var(--cf-light-color)
+}
+
+.footerStyle a[b-lnt7rqpf2h] {
+    color: #87bbd7;;
+}
+.footerStyle a:hover[b-lnt7rqpf2h]{
+    color: lightyellow;
+}
+.footerStyle .bi[b-lnt7rqpf2h]{
+    font-size: 1.5rem;
+    padding-inline-start: 0.5rem;
+}
+.col[b-lnt7rqpf2h]{
+    color:lightyellow;
+}
+#footerImage[b-lnt7rqpf2h]{
+    width: 100%;
+}
+/* /Shared/TopNavMenu.razor.rz.scp.css */
+.navStyle[b-na2iuwp88m]{
+    background-color: hsl(192, 77%, 9%);
+
+}
+.navbar-nav[b-na2iuwp88m]{
+    --bs-navbar-hover-color: var(--cf-theme-400);
+}

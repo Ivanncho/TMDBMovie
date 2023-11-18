@@ -1,0 +1,49 @@
+@page "/"
+@inject TMDBClient service
+
+<PageTitle>Blazor Movie: Popular Movies</PageTitle>
+
+<div class="container-xxl py-3">
+    <div>
+        <h1 class="display-6">
+            <span class="text-danger">
+                <i class="bi bi-fire"></i>
+            </span>
+            Popular Movies
+        </h1>
+    </div>
+    <div class="h-100 d-flex flex-column flex-md-row justify-content-between my-3">
+
+        <div class="row row-cols-2 row-cols-lg-4 row-cols-xl-5 g-3 justify-content-center justify-content-md-start">
+
+            @if (popularMovies is not null)
+            {
+
+                @foreach (PopularMovie movie in popularMovies.Results)
+                {
+                    <div class="col">
+                        <MovieCard Movie="movie" />
+                    </div>
+                }
+
+            }
+            else
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    <div class="col">
+                        <MovieCard />
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</div>
+@code {
+    private PopularMoviePagedResponse? popularMovies;
+
+    protected override async Task OnInitializedAsync()
+    {
+        popularMovies = await service.GetPopularMoviesAsync();
+    }
+}

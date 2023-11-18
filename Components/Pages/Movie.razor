@@ -1,0 +1,36 @@
+@page "/movie/{id:int}"
+@inject TMDBClient service
+
+
+@if(movieDetails is null){
+    <p><em>The Movie is loading...</em></p>
+}
+else
+{
+    <PageTitle>@movieDetails.Title</PageTitle>
+    <!--Page Banner -->
+    <div class="hero-bg" style="@($"background-image: url(https://image.tmdb.org/t/p/original/{movieDetails.BackdropPath})")">
+        <div class="hero-container">
+            <div class="container-xxl d-flex flex-column flex-md-row">
+                <!-- title content goes here-->
+                <div class="flex-grow-1 d-flex align-items-center justify-content-center justify-content-md-end">
+                    <div class="title-container text-center text-md-end">
+                        <h1 class="text-light">@movieDetails.Title</h1>
+                        <h2 class="text-light">@movieDetails.Tagline</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code{
+    [Parameter]
+    public int Id {get; set;}
+    private MovieDetails? movieDetails;
+
+        protected override async Task OnInitializedAsync()
+        {
+            movieDetails = await service.GetMovieDetailsAsync(Id);
+        }
+}

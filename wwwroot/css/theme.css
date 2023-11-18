@@ -1,0 +1,31 @@
+:root{
+
+    --cf-theme-core: var(--cf-theme-core);
+    --cf-theme-100: var(--cf-code-magic-100);
+    --cf-theme-150: var(--cf-code-magic-150);
+    --cf-theme-200: var(--cf-code-magic-200);
+    --cf-theme-300: var(--cf-code-magic-300);
+    --cf-theme-400: var(--cf-code-magic-400);
+    --cf-theme-500: var(--cf-code-magic-500);
+    --cf-theme-600: var(--cf-code-magic-600);
+    --cf-theme-700: var(--cf-code-magic-700);
+    --cf-theme-800: var(--cf-code-magic-800);
+    --cf-theme-850: var(--cf-code-magic-850);
+    --cf-theme-900: var(--cf-code-magic-900);
+
+
+
+    --cf-code-magic-core: hsl(61,78,40%);;
+    --cf-code-magic-100: hsl(192,77%, 79%);
+    --cf-code-magic-150: hsl(192, 77%, 74%);
+    --cf-code-magic-200: #87bbd7;
+    --cf-code-magic-300: hsl(192, 77%, 69%);
+    --cf-code-magic-400:  hsl(61,78,40%);;
+    --cf-code-magic-500:hsl(192, 77%, 49%);
+    --cf-code-magic-600: hsl(192, 77%, 39%);
+    --cf-code-magic-700: hsl(192, 77%, 29%);
+    --cf-code-magic-800: hsl(192, 77%, 19%);
+    --cf-code-magic-850: hsl(192, 77%, 15%);
+    --cf-code-magic-900: hsl(192, 77%, 9%);
+
+}

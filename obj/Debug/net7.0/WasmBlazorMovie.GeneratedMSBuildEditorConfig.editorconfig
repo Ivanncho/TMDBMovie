@@ -1,0 +1,49 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = WasmBlazorMovie
+build_property.RootNamespace = WasmBlazorMovie
+build_property.ProjectDir = /home/ivancho/Blazor/WasmBlazorMovie/
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/ivancho/Blazor/WasmBlazorMovie
+build_property._RazorSourceGeneratorDebug = 
+
+[/home/ivancho/Blazor/WasmBlazorMovie/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ivancho/Blazor/WasmBlazorMovie/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ivancho/Blazor/WasmBlazorMovie/Components/UI/MovieCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9VSS9Nb3ZpZUNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ivancho/Blazor/WasmBlazorMovie/Shared/TopNavLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1RvcE5hdkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ivancho/Blazor/WasmBlazorMovie/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/ivancho/Blazor/WasmBlazorMovie/Components/Pages/Movie.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Nb3ZpZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-jxlkarmdvb
+
+[/home/ivancho/Blazor/WasmBlazorMovie/Shared/Footer.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL0Zvb3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-lnt7rqpf2h
+
+[/home/ivancho/Blazor/WasmBlazorMovie/Shared/TopNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1RvcE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-na2iuwp88m
