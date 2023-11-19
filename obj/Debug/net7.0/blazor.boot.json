@@ -200,13 +200,13 @@
       "mscorlib.dll": "sha256-1LEP8nUca7i3KzI4Zu9AD7rJ8CadngV0YUKjoHGiFxA=",
       "netstandard.dll": "sha256-+zXQN9625IUa11YLU5hNoQ04oHjCwFIJAXc8vOEMniU=",
       "System.Private.CoreLib.dll": "sha256-oytzvvuRkpVGZxuLwt9SR8n1KJzGeYroKTHxk0oZvfI=",
-      "WasmBlazorMovie.dll": "sha256-js8M7FSHiBrJxRufC6zOIVLl7uYEa8VSIg51u+YmL04="
+      "WasmBlazorMovie.dll": "sha256-U3PyLFqrMnXE55ZzhxgFxRThVtZj2ozhNag6wNL\/AK8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "WasmBlazorMovie.pdb": "sha256-LLxCY11hdpUEJPsCAtf31IenGkgpan\/0f40xiaYbQ74="
+      "WasmBlazorMovie.pdb": "sha256-rhhetwL0UY6IpDYLxU6TkaX\/nVJYQRthhs+BUNrFsHc="
     },
     "runtime": {
       "dotnet.7.0.13.7pq78i7y1o.js": "sha256-eRbsSkKiWKWKcMiqy13LuLSBIpzmn52qw\/6SX+1jNQ0=",
