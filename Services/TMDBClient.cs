@@ -14,10 +14,15 @@ namespace WasmBlazorMovie.Services{
             _httpClient.DefaultRequestHeaders.Authorization = new("Bearer", apiKey);
         }
 
-        public async Task<PopularMoviePagedResponse?> GetPopularMoviesAsync(){
-            return await _httpClient.GetFromJsonAsync<PopularMoviePagedResponse>("movie/popular");
+        public async Task<PopularMoviePagedResponse?> GetPopularMoviesAsync(int page)
+        {
+            if (page < 1) page = 1;
+            if(page > 500) page = 500;
+            
+            return await _httpClient.GetFromJsonAsync<PopularMoviePagedResponse>($"movie/popular?page={page}");
         }
-        public async Task<MovieDetails?> GetMovieDetailsAsync(int id){
+        public async Task<MovieDetails?> GetMovieDetailsAsync(int id)
+        {
             return await _httpClient.GetFromJsonAsync<MovieDetails>($"movie/{id}");
         }
     }

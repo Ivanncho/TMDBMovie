@@ -39,6 +39,10 @@
     margin-top: 2rem;
   }
 }
+/* /Components/UI/Paginator.razor.rz.scp.css */
+.rounded-pill[b-uo4vnsj725]{
+    aspect-ratio: 1;
+}
 /* /Shared/Footer.razor.rz.scp.css */
 .footerStyle[b-lnt7rqpf2h]{
     background-color: hsl(192, 77%, 9%);

@@ -827,3 +827,4 @@
 /home/ivancho/Blazor/WasmBlazorMovie/obj/Debug/net7.0/scopedcss/projectbundle/WasmBlazorMovie.bundle.scp.css
 /home/ivancho/Blazor/WasmBlazorMovie/obj/Debug/net7.0/scopedcss/Shared/Footer.razor.rz.scp.css
 /home/ivancho/Blazor/WasmBlazorMovie/obj/Debug/net7.0/scopedcss/Components/Pages/Movie.razor.rz.scp.css
+/home/ivancho/Blazor/WasmBlazorMovie/obj/Debug/net7.0/scopedcss/Components/UI/Paginator.razor.rz.scp.css
