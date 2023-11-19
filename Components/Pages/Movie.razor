@@ -48,7 +48,32 @@ else
                         </div>
                     </div>
                 </div>
+                <div class="order-last order-md-first d-flex justify-content-center">
+                    <div class="poster-container">
+                        @if(string.IsNullOrEmpty(movieDetails.PosterPath))
+                        {
+                            <img class="bg-light" src="/images/imgplaceholder.png" alt="Movie Poster"/>
+                        }
+                        else
+                        {
+                            <img src="@($"https://image.tmdb.org/t/p/w500/{movieDetails.PosterPath}")" alt="Movie Poster"/>
+                        }
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="container-xxl">
+        <div class="overview">
+            <p>@movieDetails.Overview</p>
+        </div>
+        <div>
+            @if(movieDetails.SpokenLanguages.Any())
+            {
+                <div>
+                    Languages: @string.Join(", ",movieDetails.SpokenLanguages.Select(sl=> sl.EnglishName))
+                </div>
+            }
         </div>
     </div>
 }
