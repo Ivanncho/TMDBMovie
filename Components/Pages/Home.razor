@@ -1,5 +1,6 @@
 @page "/"
 @inject TMDBClient service
+@inject NavigationManager NavigationManager
 
 <PageTitle>Blazor Movie: Popular Movies</PageTitle>
 
@@ -38,12 +39,34 @@
             }
         </div>
     </div>
+    @if(popularMovies?.TotalPages > 1)
+    {
+        <div class="my-3">
+            <Paginator CurrentPage="popularMovies.Page" 
+                TotalPages="popularMovies.TotalPages > 500 ? 500 : popularMovies.TotalPages"
+                OnPageChange="GetPage"/>
+        </div>
+    }
 </div>
 @code {
     private PopularMoviePagedResponse? popularMovies;
-
-    protected override async Task OnInitializedAsync()
+    public int Page { get; set; } = 1;
+    
+     protected override async Task OnInitializedAsync()
     {
-        popularMovies = await service.GetPopularMoviesAsync();
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        popularMovies = await service.GetPopularMoviesAsync(Page);
+    }
+
+    private async Task GetPage(int pageNum)
+    {
+        Page = pageNum;
+        await LoadData();
+        string url = $"?page={pageNum}";
+        NavigationManager.NavigateTo(url);
     }
 }
